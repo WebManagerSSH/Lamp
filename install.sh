@@ -76,4 +76,4 @@ echo -e "\033[1;32m WMSSH INSTALADO COM SUCESSO!"
 echo ""
 echo -e "\033[1;36m SEU PAINEL:\033[1;37m http://$IP\033[0m"
 cat /dev/null > ~/.bash_history && history -c
-rm /root/install
+rm /root/install.sh
