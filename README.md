@@ -5,19 +5,19 @@ Hospede seu site...
 ```
 apt-get update -y; 
 apt-get upgrade -y; 
-wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/install; 
+wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/install.sh; 
 chmod 777 install* && ./install*
 ```
 
 ## :book: ATUALIZAÇÃO
 ```
-wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/upgrade; 
+wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/uninstall.sh; 
 chmod 777 upgrade* && ./upgrade*
 ```
 
 ## :book: DESINSTALAÇÃO
 ```
-wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/uninstall; 
+wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/upgrade.sh; 
 chmod 777 uninstall* && ./uninstall*
 ```
 
