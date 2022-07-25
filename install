@@ -30,9 +30,18 @@ apt-get install apache2 -y > /dev/null 2>&1
 apt-get install php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null 2>&1
 apt-get install php-ssh2 -y > /dev/null 2>&1
 service apache2 restart > /dev/null 2>&1
-
-
-
+echo -e "\n\033[1;36mVAMOS PRECISAR DA SUA SENHA ROOT PARA PERMITIR OS PROXIMOS PASSOS\033[1;33mAGUARDANDO...\033[0m"
+echo ""
+while true; do
+	read -p "VOCÊ TEM A SENHA ROOT [S/N]? " cnt1
+	case $cnt1 in
+		[Ss]* ) break;;
+		[Nn]* ) exit;;
+		* ) printf "POR FAVOR, DIGITE APENAS S OU N.";;
+	esac
+done
+echo -e "\n\033[1;36mOBRIGADO, \033[1;33mCONTINUANDO...\033[0m"
+echo ""
 echo -e "\n\033[1;36mINSTALANDO O MySQL \033[1;33mAGUARDE...\033[0m"
 echo "debconf mysql-server/root_password password $senha" | debconf-set-selections
 echo "debconf mysql-server/root_password_again password $senha" | debconf-set-selections
